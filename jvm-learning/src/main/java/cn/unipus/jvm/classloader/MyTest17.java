@@ -29,6 +29,10 @@ public class MyTest17 extends ClassLoader {
     this.path = path;
   }
 
+  public MyTest17(ClassLoader parent) {
+    super(parent);
+  }
+
   public MyTest17(String classLoaderName) {
     super();  //将系统类加载器当作该类加载器的父加载器
     this.classLoaderName = classLoaderName;
